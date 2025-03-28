@@ -5,7 +5,7 @@ description: "Stellar Quest 3:  First Mission"
 reading_time: true
 words_per_minute: 200
 logo: "assets/img/stellar-quest.png"
-background: "assets/img/stellar-quest.png"
+background: "assets/img/stellar-bg1.png"
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
 url: https://github.com/anataliocs/soroban-quest
