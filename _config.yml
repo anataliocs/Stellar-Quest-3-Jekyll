@@ -1,14 +1,14 @@
 # Site
-title: Moonrise
-bio: "Minimal, one column jekyll theme."
-description: "Moonrise is a fresh take on the classic Moon"
+title: Proof of Completion
+bio: "This page celebrates your acheivement of completing the first mission of Stellar Quest 3!"
+description: "Stellar Quest 3:  First Mission"
 reading_time: true
 words_per_minute: 200
-logo: "assets/img/logo.png"
-background: "assets/img/moonrise-background.jpg"
+logo: "assets/img/stellar-quest.png"
+background: "assets/img/stellar-quest.png"
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
-url: https://TolgaTatli.github.io/Moonrise
+url: https://github.com/anataliocs/soroban-quest
 
 # Jekyll
 permalink: /:title/
