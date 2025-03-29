@@ -4,7 +4,7 @@ bio: "This page celebrates your acheivement of completing the first mission of S
 description: "Stellar Quest 3:  First Mission"
 reading_time: true
 words_per_minute: 200
-logo: "assets/img/stellar-quest-sticker-round.png"
+logo: "assets/img/stellar-quest-3-sticker.png"
 background: "assets/img/stellar-bg1.png"
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
