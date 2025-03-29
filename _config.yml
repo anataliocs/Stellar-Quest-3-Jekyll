@@ -73,6 +73,7 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sass-converter
+  - jekyll-remote-theme
 
 jekyll-mentions:
   base_url: https://github.com
