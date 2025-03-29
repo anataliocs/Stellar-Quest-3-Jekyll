@@ -1,35 +1,31 @@
-// _sass/print.scss
-@import 'variables';
-
 body {
-  background-color: $white;
-}
+  background-color: #ffffff; }
 
 @media print {
   body {
     background-image: none !important;
-    background-color: $white;
-  }
+    background-color: #ffffff; }
+
   .wrapper {
     box-shadow: none;
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
+
   .container {
-    box-shadow: none;
-  }
+    box-shadow: none; }
+
   .feature {
-      padding: 0;
-  }
+    padding: 0; }
+
   .social-btn, .btn {
-    border-color: $color_mischka;
-  }
+    border-color: #d0d1d5; }
+
   .post-title .btn,
   .reading-time,
   #dl-menu,
   #disqus_thread,
   .goup-container {
-    display: none;
-  }
-}
+    display: none; } }
+
+/*# sourceMappingURL=print.css.map */

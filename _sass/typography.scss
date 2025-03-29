@@ -1,3 +1,11 @@
+
+// _sass/typography.scss
+@import 'mixins';
+
+h1 {
+  @include font-size(2rem);
+}
+
 // content area
 .content {
 	@include font-size(14);

@@ -1,3 +1,6 @@
+// _sass/mixins.scss
+@import 'variables';
+
 // UTILITY MIXINS
 // --------------------------------------------------
 
@@ -59,7 +62,7 @@
 // Full-fat vertical rhythm
 // ------------------------
 @mixin font-size($size) {
-  font-size: 0px + $size;
+  font-size: 0rem + $size;
   font-size: 0rem + calc($size / $doc-font-size);
   line-height: 0 + calc(round($doc-line-height / $size * 10000) / 10000);
   margin-bottom: 0px + $doc-line-height;

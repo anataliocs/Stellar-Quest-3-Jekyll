@@ -3,6 +3,13 @@
 ////////////////////////
 
 @use "sass:math";
+// _sass/vendor/magnific-popup/_settings.scss
+@import 'variables';
+
+.popup {
+  background-color: $black;
+}
+
 // overlay
 $mfp-overlay-color:                   $black;                        // Color of overlay screen
 $mfp-overlay-opacity:                 0.8;                           // Opacity of overlay screen

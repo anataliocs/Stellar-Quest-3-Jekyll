@@ -1,6 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
 pre.highlight {
 	padding: 1em;
 }
+
+code {
+	font-family: $font2;
+  }
 
 .highlight {
 	background-color: #49483e;

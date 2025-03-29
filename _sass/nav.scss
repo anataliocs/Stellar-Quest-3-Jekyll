@@ -1,3 +1,11 @@
+// _sass/nav.scss
+@import 'variables';
+@import 'mixins';
+
+.nav {
+  font-size: $notsmall;
+}
+
 .dl-menuwrapper {
 	width: 100%;
 	position: absolute;
