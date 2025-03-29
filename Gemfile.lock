@@ -312,6 +312,7 @@ DEPENDENCIES
   jekyll-include-cache
   jekyll-mentions
   jekyll-paginate
+  jekyll-sass-converter
   jekyll-seo-tag
   jekyll-sitemap
   minima (~> 2.5)
