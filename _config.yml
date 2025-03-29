@@ -25,6 +25,7 @@ mathjax: true
 sass:
   sass_dir: _sass
   style: compressed
+  
 
 # Comments
 
@@ -71,6 +72,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-sass-converter
 
 jekyll-mentions:
   base_url: https://github.com
