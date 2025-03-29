@@ -1,5 +1,7 @@
 # Stellar Quest 3 Proof of Acheivement Jekyll Theme
 
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github&style=flat-square)](https://github.com/codespaces/new?repo=anataliocs/Stellar-Quest-3-Jekyll)
+
 ## Getting Started
 
 To learn how to install and use this theme check out the [Setup Guide](https://tolgatatli.github.io/Moonrise/) for more information.
