@@ -5,51 +5,33 @@
 Preview Github Pages Certificate
 [![SQuest3Cert Preview](https://img.shields.io/badge/🚀%20Stellar%20Quest%203-blueviolet)](https://anataliocs.github.io/Stellar-Quest-3-Jekyll/)
 
+## Run Locally
 
-## Getting Started
+```
+bundle install && bundle exec jekyll serve
+```
 
-To learn how to install and use this theme check out the [Setup Guide](https://tolgatatli.github.io/Moonrise/) for more information.
+Compile Sass
+```
+sass _sass/ :assets/css/main.css
+```
 
 ## Installation
-* Fork the [Moonrise repo](https://github.com/TolgaTatli/Moonrise/fork)
 * Edit `_config.yml` file.
 * Remove sample posts from `_posts` folder and add yours.
-* Edit `index.md` file in `about` folder.
-* Change repo name to `YourUserName.github.io`    
-     
-That's all.
+* Edit `index.md` file in `about` folder. 
 
-## Site Setup
-A quick checklist of the files you’ll want to edit to get up and running.    
-
-### Site Wide Configuration
+### Global Config
 `_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:
 
-#### title
 
-The title of your site... shocker!
-
-Example `title: My Awesome Site`
-
-#### bio
-
-The description to show on your homepage.
-
-#### description
-
-The description to use for meta tags and navigation menu.
-
-#### url
+#### URL Details
 
 Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for generating canonical URLs in `<head>`. When developing locally either comment this out or use something like `http://localhost:4000` so all assets load properly. *Don't include a trailing `/`*.
 
 Examples:
 
 {% highlight yaml %} url: http://tolgatatli.me/Moonrise url: http://localhost:4000 url: //cooldude.github.io url {%endhighlight%}
-
-#### reading_time
-
-Set true to show reading time for posts. And set `words_per_minute`, default is 200.
 
 #### logo
 Your site's logo. It will show on homepage and navigation menu. Also used for twitter meta tags.
@@ -75,10 +57,6 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 
 - title: About
   url: /about/
-
-- title: Moon
-  url: http://tolgatatli.me/Moon
-{% endhighlight %}
 
 ---
 
