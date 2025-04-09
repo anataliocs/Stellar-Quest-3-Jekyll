@@ -60,10 +60,6 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 
 ---
 
-## Layouts and Content
-
-Moon Theme use [Jekyll Compress](https://github.com/penibelst/jekyll-compress-html) to compress html output. But it can cause errors if you use "linenos" (line numbers). I suggest don't use line numbers for codes, because it won't look good with this theme, also i didn't give a proper style for them. If you insist to use line numbers, just remove `layout: compress` string from layouts. It will disable compressing.
-
 ### Feature Image
 
 You can set feature image per post. Just add `feature: some link` to your post's front matter.

@@ -1,6 +1,3 @@
----
-layout: compress
----
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
@@ -28,9 +25,9 @@ layout: compress
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
                     {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
+                    <a class="btn zoombtn" href="{{site.url}}{{ site.baseurl }}/projects/">
                         {% else %}
-                        <a class="btn zoombtn" href="{{site.url}}/posts/">
+                        <a class="btn zoombtn" href="{{site.url}}{{ site.baseurl }}/posts/">
                             {% endif %}
                             <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                         </a>
@@ -43,11 +40,6 @@ layout: compress
         </div>
         
     </header>
-    {% include scripts.html %}
-    {% if site.mathjax == true %}
-    <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    {% endif %}
 </body>
 
 </html>
