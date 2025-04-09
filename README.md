@@ -22,7 +22,7 @@ sass _sass/ :assets/css/main.css
 * Edit `index.md` file in `about` folder. 
 
 ### Global Config
-`_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:
+`_config.yml` 
 
 
 #### URL Details

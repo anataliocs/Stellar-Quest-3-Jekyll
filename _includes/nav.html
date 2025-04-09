@@ -1,23 +1,19 @@
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-    <button class="dl-trigger">Open Menu</button>
+    <button class="dl-trigger">Menu</button>
     <ul class="dl-menu">
         <li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
         <li>
-            <a href="#">About</a>
+            <a href="#">Actions</a>
             <ul class="dl-submenu">
                 <li>
                     <img src="{{ site.url }}{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
                     <h4>{{ site.title }}</h4>
                     <p>{{ site.description }}</p>
                 </li>
-                <li><a href="{{ site.url }}{{ site.baseurl }}/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+                <li><a href="{{ site.url }}{{ site.baseurl }}/about/"><span class="btn btn-inverse"><i class="fa fa-fw fa-gem"></i>Treasure Chest</span></a></li>
                 {% if site.twitter %}<li>
                     <a href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i
                             class="fa fa-fw fa-twitter-square"></i> Twitter</a>
-                </li>{% endif %}
-                {% if site.google.plus %}<li>
-                    <a href="http://plus.google.com/+{{ site.google.plus }}" target="_blank"
-                        rel="noopener noreferrer"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
                 </li>{% endif %}
                 {% if site.linkedin %}<li>
                     <a href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><i
@@ -30,10 +26,6 @@
                 {% if site.stackoverflow %}<li>
                     <a href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank"
                         rel="noopener noreferrer"><i class="fa fa-fw fa-stack-overflow"></i> StackOverflow</a>
-                </li>{% endif %}
-                {% if site.steam %}<li>
-                    <a href="http://steamcommunity.com/id/{{ site.steam }}" target="_blank" rel="noopener noreferrer"><i
-                            class="fa fa-fw fa-steam-square"></i> Steam</a>
                 </li>{% endif %}
                 {% if site.youtube %}<li>
                     <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" rel="noopener noreferrer"><i

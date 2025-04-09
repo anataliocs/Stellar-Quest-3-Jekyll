@@ -3,7 +3,6 @@ title: Proof of Completion
 bio: "This page celebrates your acheivement of completing the first mission of Stellar Quest 3!"
 description: "Stellar Quest 3:  First Mission"
 reading_time: false
-words_per_minute: 200
 logo: "assets/img/stellar-quest-3-sticker.png"
 background: "assets/img/sq3-bg.png"
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
@@ -21,7 +20,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
-mathjax: true
+mathjax: false
 sass:
   sass_dir: _sass
   style: expanded
