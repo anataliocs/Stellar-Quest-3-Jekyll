@@ -22,9 +22,7 @@ body {
     border-color: #d0d1d5; }
 
   .post-title .btn,
-  .reading-time,
   #dl-menu,
-  #disqus_thread,
   .goup-container {
     display: none; } }
 

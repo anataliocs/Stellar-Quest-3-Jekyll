@@ -127,26 +127,6 @@ body {
       padding: 2em 0;
       box-shadow: none; } }
 
-#disqus_thread {
-  width: 75%;
-  max-width: 850px;
-  margin: -3rem auto 4rem;
-  background: #ffffff;
-  color: #383838;
-  padding: 2em;
-  border-radius: 3px;
-  box-shadow: 0 0 10px 0 rgba(40, 40, 40, 0.3);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-  @media only screen and (max-width: 30em) {
-    #disqus_thread {
-      width: 90%;
-      padding: 2em 0;
-      box-shadow: none; } }
-
 .entry-meta {
   font-size: 12px;
   font-size: 0remcalc($size / $doc-font-size);
