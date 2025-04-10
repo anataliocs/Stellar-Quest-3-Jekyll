@@ -2,13 +2,13 @@
 @use 'variables';
 
 body {
-  background-color: variables.$white;
+  
 }
 
 @media print {
   body {
     background-image: none !important;
-    background-color: variables.$white;
+    
   }
   .wrapper {
     box-shadow: none;
@@ -22,9 +22,7 @@ body {
   .feature {
       padding: 0;
   }
-  .social-btn, .btn {
-    border-color: variables.$color_mischka;
-  }
+
   .post-title .btn,
   #dl-menu,
   .goup-container {

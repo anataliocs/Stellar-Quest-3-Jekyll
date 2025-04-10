@@ -2,23 +2,15 @@
 @use 'mixins';
 
 .element {
-    color: variables.$color_mercury;
+    
   }
 
 // Buttons
 %btnextend {
     display: inline-block;
     border: 1px solid;
-    border-color: rgba(variables.$color_mercury, 0.5) rgba(variables.$color_bon_jour, 0.5)
-        variables.$color_mischka;
-    border-radius: 3px;
+    
     text-decoration: none;
-    background: variables.$white;
-    color: variables.$color_shark;
-    &:hover {
-        box-shadow: 0 0 1px 0 rgba(variables.$color_shark, 0.5);
-        color: variables.$red;
-    }
 }
 .social-btn {
     padding: 6.46px;
@@ -31,66 +23,16 @@
 }
 .btn {
     padding: 10px 18px;
-    @include mixins.font-rem(14);
     margin: 4px auto;
     @extend %btnextend;
-    &.btn-success {
-        background-color: variables.$success;
-        color: variables.$white;
-        border-color: variables.$success;
-        &:visited {
-            color: variables.$white;
-        }
-        &:hover {
-            background-color: variables.$white;
-            color: variables.$success;
-        }
-    }
-    &.btn-warning {
-        background-color: variables.$warning;
-        color: variables.$white;
-        border-color: variables.$warning;
-        &:visited {
-            color: variables.$white;
-        }
-        &:hover {
-            background-color: variables.$white;
-            color: variables.$warning;
-        }
-    }
-    &.btn-danger {
-        background-color: variables.$danger;
-        color: variables.$white;
-        border-color: variables.$danger;
-        &:visited {
-            color: variables.$white;
-        }
-        &:hover {
-            background-color: variables.$white;
-            color: variables.$danger;
-        }
-    }
-    &.btn-info {
-        background-color: variables.$info;
-        color: variables.$white;
-        border-color: variables.$info;
-        &:visited {
-            color: variables.$white;
-        }
-        &:hover {
-            background-color: variables.$white;
-            color: variables.$info;
-        }
-    }
-}
+
 .title .btn {
     margin: 10px;
-    @include mixins.font-rem(16);
     font-weight: 300;
 }
 .post-list {
     .btn {
-        @include mixins.font-rem(14);
+        
     }
 }
 
@@ -102,27 +44,22 @@ hr {
     margin: 1em 0;
     background-image: -webkit-linear-gradient(
         left,
-        variables.$color_gallery,
-        variables.$color_stack,
-        variables.$color_gallery
+        
     );
     background-image: -moz-linear-gradient(
         left,
-        variables.$color_gallery,
-        variables.$color_stack,
-        variables.$color_gallery
+        
     );
     background-image: -ms-linear-gradient(
         left,
-        variables.$color_gallery,
-        variables.$color_stack,
-        variables.$color_gallery
+        
+        
     );
     background-image: -o-linear-gradient(
         left,
-        variables.$color_gallery,
-        variables.$color_stack,
-        variables.$color_gallery
+        
+        
+        
     );
     &.hr-line {
         border: 0;
@@ -131,27 +68,27 @@ hr {
         margin: 1em 0;
         background-image: -webkit-linear-gradient(
             left,
-            variables.$color_gallery,
-            variables.$color_stack,
-            variables.$color_gallery
+            
+            
+            
         );
         background-image: -moz-linear-gradient(
             left,
-            variables.$color_gallery,
-            variables.$color_stack,
-            variables.$color_gallery
+            
+            
+            
         );
         background-image: -ms-linear-gradient(
             left,
-            variables.$color_gallery,
-            variables.$color_stack,
-            variables.$color_gallery
+            
+            
+            
         );
         background-image: -o-linear-gradient(
             left,
-            variables.$color_gallery,
-            variables.$color_stack,
-            variables.$color_gallery
+            
+            
+            
         );
     }
 }
@@ -170,13 +107,11 @@ img {
 }
 .img-circle {
     border-radius: 50%;
-    border: 3px solid variables.$white;
     height: 150px;
     width: 150px;
 }
 .img-circle-sm {
     border-radius: 50%;
-    border: 2px solid variables.$white;
     height: 75px;
     width: 75px;
 }
@@ -194,10 +129,10 @@ figure {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include mixins.clearfix();
+    
     img {
         margin-bottom: 10px;
-        @include mixins.rounded(4px);
+        
     }
     &.half {
         @media only screen and (min-width: 62.5em) {
@@ -235,7 +170,7 @@ kbd {
     display: inline-block;
     margin: 0 1px;
     padding: 1px 8px;
-    @include mixins.font-rem(10);
+    
     font-weight: bold;
     color: variables.$color_fuscous_gray;
     vertical-align: middle;
@@ -249,14 +184,11 @@ kbd {
 // go up button
 .goup-container {
     border-radius: 3px !important;
-    border-color: rgba(variables.$color_mercury, 0.5) rgba(variables.$color_bon_jour, 0.5)
-        variables.$color_mischka !important;
+    
     border: 1px solid;
     @media #{variables.$small} {
         display: none !important;
     }
 }
-.goup-arrow {
-    border-color: transparent transparent variables.$color_tuatara !important;
-}
 
+}

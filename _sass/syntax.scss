@@ -6,14 +6,9 @@ pre.highlight {
 	padding: 1em;
 }
 
-code {
-	font-family: variables.$font2;
-  }
 
 .highlight {
 	background-color: #49483e;
-	font-family: variables.$font2;
-	@include mixins.font-size(14);
 	color: #f8f8f2;
 	border-radius: 4px;
 	pre {
@@ -21,7 +16,6 @@ code {
 		margin: 0;
 		padding: 1em;
 	}
-	.lineno            { padding-right: 24px; color: color.adjust(#49483e,$lightness: 50);}
 	.hll               { background-color: #49483e}
 	.c                 { color: #75715e }                            /* Comment                     */
 	.err               { color: #960050; background-color: #1e0010 } /* Error                       */

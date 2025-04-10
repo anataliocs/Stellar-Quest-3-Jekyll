@@ -2,18 +2,8 @@ pre.highlight {
   padding: 1em;
 }
 
-code {
-  font-family: Inconsolata;
-}
-
 .highlight {
   background-color: #49483e;
-  font-family: Inconsolata;
-  font-size: 14rem;
-  font-size: 0.875rem;
-  line-height: 1.8571;
-  margin-bottom: 26px;
-  margin-bottom: 1.625rem;
   color: #f8f8f2;
   border-radius: 4px;
   /* Comment                     */
@@ -79,10 +69,6 @@ code {
   position: relative;
   margin: 0;
   padding: 1em;
-}
-.highlight .lineno {
-  padding-right: 24px;
-  color: rgb(199.8888888889, 199, 190.1111111111);
 }
 .highlight .hll {
   background-color: #49483e;

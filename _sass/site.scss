@@ -2,9 +2,6 @@
 @use 'variables';
 @use 'mixins';
 
-body {
-  font-family: variables.$font1;
-}
 
 //@extend-elements
 %extend1 {
@@ -20,17 +17,9 @@ html {
 }
 body {
     @extend %extend1;
-    font-family: variables.$font1;
-    @include mixins.font-rem(variables.$doc-font-size);
-    color: variables.$color_tuatara;
-    //background-color: $bodycolor;
 		
     background-position: center center;
     background-attachment: fixed;
-    @media #{variables.$small} {
-        background-image: none !important;
-        background: variables.$white;
-    }
 }
 * {
     box-sizing: border-box;
@@ -47,10 +36,6 @@ body {
     width: 100%;
     min-height: 300px;
     text-align: left;
-    color: variables.$white;
-    @media #{variables.$small} {
-        display: block !important;
-    }
     @media only screen and (max-height: 500px) {
         display: block !important;
     }
@@ -82,26 +67,13 @@ body {
     max-width: 550px;
     padding-right: 15px;
     padding-left: 15px;
-    @include mixins.center-block();
     // background: linear-gradient(to right,rgb(128, 110, 142),white);	
-		background-color: variables.$white;
-    color: variables.$color_shark;
+		
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4.1%;
-    box-shadow: 0 0 10px 0 rgba(variables.$color_shark, 0.3);
-    @include mixins.transition(0.5s);
-    @media #{variables.$small} {
-        width: 100%;
-        box-shadow: none;
-    }
-    @media #{variables.$medium} {
-        width: 80%;
-        // height: 78.9%;
-        border-radius: 3%;
-    }
 }
 .row {
     justify-content: center;
@@ -150,11 +122,10 @@ body {
     .tag {
         display: inline-block;
         border: 1px solid;
-        border-color: rgba(variables.$color_mercury, 0.5) rgba(variables.$color_bon_jour, 0.5)
-            variables.$color_mischka;
-        @include mixins.rounded(3px);
+        
+        
         text-decoration: none;
-        background-color: variables.$white;
+        
         color: variables.$color_tuatara;
         @include mixins.transition(0.75s);
         margin: 2px 5px;

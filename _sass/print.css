@@ -1,11 +1,6 @@
-body {
-  background-color: #ffffff;
-}
-
 @media print {
   body {
     background-image: none !important;
-    background-color: #ffffff;
   }
   .wrapper {
     box-shadow: none;
@@ -18,9 +13,6 @@ body {
   }
   .feature {
     padding: 0;
-  }
-  .social-btn, .btn {
-    border-color: #d0d1d5;
   }
   .post-title .btn,
   #dl-menu,
