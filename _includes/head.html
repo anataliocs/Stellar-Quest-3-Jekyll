@@ -15,12 +15,7 @@ feature contains 'https://' %}{% capture feature %}{{ site.url }}{{ site.baseurl
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/{{ site.logo }}">{% endif %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-{% if page.excerpt %}
-<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
-{% endif %}
-{% if site.twitter %}
-<meta name="twitter:site" content="@{{ site.twitter }}">
-<meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
+
 <!-- Open Graph -->
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:type" content="article">
@@ -43,7 +38,7 @@ remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- CSS -->
-<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/index.css">
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/index.css/">
 <!-- JS -->
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr-3.3.1.custom.min.js"></script>
 <!-- Favicons -->
@@ -56,7 +51,6 @@ remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link href="{{ site.url }}{{ site.baseurl }}/assets/css/fontawesome.min.css" rel="stylesheet" />
 <link href="{{ site.url }}{{ site.baseurl }}/assets/css/brands.css" rel="stylesheet" />
 <link href="{{ site.url }}{{ site.baseurl }}/assets/css/solid.css" rel="stylesheet" />
-<link href="{{ site.url }}{{ site.baseurl }}/assets/css/all-min.css" rel="stylesheet" />
 
 <style type="text/css">
     body {
