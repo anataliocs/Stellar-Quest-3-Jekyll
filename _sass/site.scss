@@ -67,7 +67,7 @@ body {
     max-width: 550px;
     padding-right: 15px;
     padding-left: 15px;
-    
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,7 +79,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4.1%;
+
+    border-radius: 3px !important;
+    border-color: rgba(#e5e6e9, 0.5) rgba(#dfe0e4, 0.5)
+    #d0d1d5 !important;
+    border: 1px solid;
 }
 .row {
     justify-content: center;
@@ -95,8 +99,9 @@ body {
     width: 75%;
     max-width: 850px;
     margin: 4rem auto;
-    
-    
+    background: white;
+    color: #383838;
+    box-shadow: 0 0 10px 0 rgba(#282828, 0.3);
     padding: 2em;
     border-radius: 3px;
 }
