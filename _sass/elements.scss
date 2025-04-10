@@ -1,23 +1,23 @@
-@import 'variables';
-@import 'mixins';
+@use 'variables';
+@use 'mixins';
 
 .element {
-    color: $color_mercury;
+    color: variables.$color_mercury;
   }
 
 // Buttons
 %btnextend {
     display: inline-block;
     border: 1px solid;
-    border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5)
-        $color_mischka;
+    border-color: rgba(variables.$color_mercury, 0.5) rgba(variables.$color_bon_jour, 0.5)
+        variables.$color_mischka;
     border-radius: 3px;
     text-decoration: none;
-    background: $white;
-    color: $color_shark;
+    background: variables.$white;
+    color: variables.$color_shark;
     &:hover {
-        box-shadow: 0 0 1px 0 rgba($color_shark, 0.5);
-        color: $red;
+        box-shadow: 0 0 1px 0 rgba(variables.$color_shark, 0.5);
+        color: variables.$red;
     }
 }
 .social-btn {
@@ -31,66 +31,66 @@
 }
 .btn {
     padding: 10px 18px;
-    @include font-rem(14);
+    @include mixins.font-rem(14);
     margin: 4px auto;
     @extend %btnextend;
     &.btn-success {
-        background-color: $success;
-        color: $white;
-        border-color: $success;
+        background-color: variables.$success;
+        color: variables.$white;
+        border-color: variables.$success;
         &:visited {
-            color: $white;
+            color: variables.$white;
         }
         &:hover {
-            background-color: $white;
-            color: $success;
+            background-color: variables.$white;
+            color: variables.$success;
         }
     }
     &.btn-warning {
-        background-color: $warning;
-        color: $white;
-        border-color: $warning;
+        background-color: variables.$warning;
+        color: variables.$white;
+        border-color: variables.$warning;
         &:visited {
-            color: $white;
+            color: variables.$white;
         }
         &:hover {
-            background-color: $white;
-            color: $warning;
+            background-color: variables.$white;
+            color: variables.$warning;
         }
     }
     &.btn-danger {
-        background-color: $danger;
-        color: $white;
-        border-color: $danger;
+        background-color: variables.$danger;
+        color: variables.$white;
+        border-color: variables.$danger;
         &:visited {
-            color: $white;
+            color: variables.$white;
         }
         &:hover {
-            background-color: $white;
-            color: $danger;
+            background-color: variables.$white;
+            color: variables.$danger;
         }
     }
     &.btn-info {
-        background-color: $info;
-        color: $white;
-        border-color: $info;
+        background-color: variables.$info;
+        color: variables.$white;
+        border-color: variables.$info;
         &:visited {
-            color: $white;
+            color: variables.$white;
         }
         &:hover {
-            background-color: $white;
-            color: $info;
+            background-color: variables.$white;
+            color: variables.$info;
         }
     }
 }
 .title .btn {
     margin: 10px;
-    @include font-rem(16);
+    @include mixins.font-rem(16);
     font-weight: 300;
 }
 .post-list {
     .btn {
-        @include font-rem(14);
+        @include mixins.font-rem(14);
     }
 }
 
@@ -102,27 +102,27 @@ hr {
     margin: 1em 0;
     background-image: -webkit-linear-gradient(
         left,
-        $color_gallery,
-        $color_stack,
-        $color_gallery
+        variables.$color_gallery,
+        variables.$color_stack,
+        variables.$color_gallery
     );
     background-image: -moz-linear-gradient(
         left,
-        $color_gallery,
-        $color_stack,
-        $color_gallery
+        variables.$color_gallery,
+        variables.$color_stack,
+        variables.$color_gallery
     );
     background-image: -ms-linear-gradient(
         left,
-        $color_gallery,
-        $color_stack,
-        $color_gallery
+        variables.$color_gallery,
+        variables.$color_stack,
+        variables.$color_gallery
     );
     background-image: -o-linear-gradient(
         left,
-        $color_gallery,
-        $color_stack,
-        $color_gallery
+        variables.$color_gallery,
+        variables.$color_stack,
+        variables.$color_gallery
     );
     &.hr-line {
         border: 0;
@@ -131,27 +131,27 @@ hr {
         margin: 1em 0;
         background-image: -webkit-linear-gradient(
             left,
-            $color_gallery,
-            $color_stack,
-            $color_gallery
+            variables.$color_gallery,
+            variables.$color_stack,
+            variables.$color_gallery
         );
         background-image: -moz-linear-gradient(
             left,
-            $color_gallery,
-            $color_stack,
-            $color_gallery
+            variables.$color_gallery,
+            variables.$color_stack,
+            variables.$color_gallery
         );
         background-image: -ms-linear-gradient(
             left,
-            $color_gallery,
-            $color_stack,
-            $color_gallery
+            variables.$color_gallery,
+            variables.$color_stack,
+            variables.$color_gallery
         );
         background-image: -o-linear-gradient(
             left,
-            $color_gallery,
-            $color_stack,
-            $color_gallery
+            variables.$color_gallery,
+            variables.$color_stack,
+            variables.$color_gallery
         );
     }
 }
@@ -170,13 +170,13 @@ img {
 }
 .img-circle {
     border-radius: 50%;
-    border: 3px solid $white;
+    border: 3px solid variables.$white;
     height: 150px;
     width: 150px;
 }
 .img-circle-sm {
     border-radius: 50%;
-    border: 2px solid $white;
+    border: 2px solid variables.$white;
     height: 75px;
     width: 75px;
 }
@@ -194,10 +194,10 @@ figure {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include clearfix();
+    @include mixins.clearfix();
     img {
         margin-bottom: 10px;
-        @include rounded(4px);
+        @include mixins.rounded(4px);
     }
     &.half {
         @media only screen and (min-width: 62.5em) {
@@ -235,28 +235,28 @@ kbd {
     display: inline-block;
     margin: 0 1px;
     padding: 1px 8px;
-    @include font-rem(10);
+    @include mixins.font-rem(10);
     font-weight: bold;
-    color: $color_fuscous_gray;
+    color: variables.$color_fuscous_gray;
     vertical-align: middle;
-    background-color: $color_alabaster;
-    border: solid 1px $color_celeste;
-    border-bottom-color: $color_pink_swan;
+    background-color: variables.$color_alabaster;
+    border: solid 1px variables.$color_celeste;
+    border-bottom-color: variables.$color_pink_swan;
     border-radius: 3px;
-    box-shadow: inset 0 -1px 0 $color_pink_swan;
+    box-shadow: inset 0 -1px 0 variables.$color_pink_swan;
 }
 
 // go up button
 .goup-container {
     border-radius: 3px !important;
-    border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5)
-        $color_mischka !important;
+    border-color: rgba(variables.$color_mercury, 0.5) rgba(variables.$color_bon_jour, 0.5)
+        variables.$color_mischka !important;
     border: 1px solid;
-    @media #{$small} {
+    @media #{variables.$small} {
         display: none !important;
     }
 }
 .goup-arrow {
-    border-color: transparent transparent $color_tuatara !important;
+    border-color: transparent transparent variables.$color_tuatara !important;
 }
 

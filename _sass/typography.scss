@@ -15,9 +15,6 @@ h1 {
 	-moz-font-smoothing: antialiased !important;
 	text-rendering: optimizelegibility !important;
 	text-align: justify;
-	@media #{$small} {
-		padding: 0 .5em;
-	}
 }
 
 // titles

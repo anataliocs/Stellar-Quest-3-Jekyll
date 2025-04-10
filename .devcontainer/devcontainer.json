@@ -1,6 +1,6 @@
 {
     "name": "Stellar Quest 3 Jekyll Development Container",
-    "image": "mcr.microsoft.com/vscode/devcontainers/ruby:0-3",
+    "image": "mcr.microsoft.com/vscode/devcontainers/ruby:3.3",
     "features": {
         "ghcr.io/devcontainers/features/node:1": {}
     },
