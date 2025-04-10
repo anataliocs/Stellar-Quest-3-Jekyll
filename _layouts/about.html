@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+<html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]>
+<html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"><!--<![endif]-->
 
@@ -10,40 +13,41 @@
 </head>
 
 <body>
-    {% include nav.html %}
-    <!-- Header -->
-    <header class="header flex" role="banner">
-        <div class="container animated fadeIn">
-            <div class="row">
-                <h3 class="title">
-                    <a class="zoombtn" href="{{ site.url }}{{ site.baseurl }}/about/">
-                        <p style="font-size:1.2rem;font-weight:300">Github Treasure Chest</p>
-                    </a>
-                </h3>
-                <hr class="hr-line">
-                <h3 class="title">
-                    <a href="{{ site.url }}{{ site.baseurl }}/">
-                        <p style="font-size:1rem;font-weight:300">Github workflows drop treasures off for you here</p>
-                    </a>
-                </h3>
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/new-spellbook-unlocked.gif" class="img">
-
-                <a class="zoombtn" href="{{ site.url }}{{ site.baseurl }}/assets/pdf/stellar-cli-spellbook.pdf">
-                    <p style="font-size:1.2rem;font-weight:300">Stellar CLI Spellbook</p>
+{% include nav.html %}
+<!-- Header -->
+<header class="header flex" role="banner">
+    <div class="container animated fadeIn">
+        <div class="row">
+            <h3 class="title">
+                <a class="zoombtn" href="{{ site.url }}{{ site.baseurl }}/about/">
+                    <p style="font-size:1.2rem;font-weight:300">Github Treasure Chest</p>
                 </a>
+            </h3>
+            <hr class="hr-line">
+            <h3 class="title">
+                <a href="{{ site.url }}{{ site.baseurl }}/">
+                    <p style="font-size:1rem;font-weight:300">Github workflows drop treasures off for you here</p>
+                </a>
+            </h3>
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/img/new-spellbook-unlocked.gif" class="img" alt="">
 
-            </div>
-            <div class="row">
-        </h3>
-        <hr class="hr-line"><br/>
-        <p style="font-size:1rem;font-weight:300">
-            Testing Image as PDF with watermark, QR code, embedded meta data and doc history for provenance
-            <object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/stellar-cli-spellbook.pdf" width="400" height="400" type='application/pdf'/>                  
-        </p>
-            </div>
+            <a class="zoombtn" href="{{ site.url }}{{ site.baseurl }}/assets/pdf/stellar-cli-spellbook.pdf">
+                <p style="font-size:1.2rem;font-weight:300">Stellar CLI Spellbook</p>
+            </a>
         </div>
-    </header>
-    {% include scripts.html %}
+
+        <div class="row">
+            <hr class="hr-line">
+            <br/>
+            <p style="font-size:1rem;font-weight:300">
+                Testing Image as PDF with watermark, QR code, embedded meta data and doc history for provenance
+                <object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/stellar-cli-spellbook.pdf" width="400"
+                        height="400" type='application/pdf'></object>
+            </p>
+        </div>
+    </div>
+</header>
+{% include scripts.html %}
 </body>
 
 </html>
