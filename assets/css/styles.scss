@@ -1,7 +1,26 @@
 ---
-
+sitemap: false
 ---
 
+@import "old/variables";
+@import "old/mixins";
+@import "old/normalize";
+@import "old/site";
+@import "old/typography";
+@import "old/elements";
+@import "old/syntax";
+@import "old/nav";
+
+
+@import "brands";
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "site";
+@import "typography";
+@import "elements";
+@import "syntax";
+@import "nav";
 @import "brands";
 @import "elements";
 @import "fontawesome";
@@ -14,7 +33,12 @@
 @import "syntax";
 @import "typography";
 @import "v4-shims";
-@import "core";
+
+@import "vendor/fonts";
+@import "vendor/font-awesome";
+@import "vendor/animate";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
 
 
 

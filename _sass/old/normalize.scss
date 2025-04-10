@@ -1,4 +1,5 @@
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,6 +11,7 @@ body {
 
 /* HTML5 display definitions
    ========================================================================== */
+
 article,
 aside,
 details,
@@ -48,6 +50,7 @@ template,
 
 /* Links
    ========================================================================== */
+
 a {
   background-color: transparent;
 }
@@ -60,6 +63,7 @@ a:focus {
 
 /* Text-level semantics
    ========================================================================== */
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -112,6 +116,7 @@ sup {
 
 /* Embedded content
    ========================================================================== */
+
 img {
   border-style: none;
 }
@@ -122,6 +127,7 @@ svg:not(:root) {
 
 /* Grouping content
    ========================================================================== */
+
 code,
 kbd,
 pre,
@@ -142,6 +148,7 @@ hr {
 
 /* Forms
    ========================================================================== */
+
 button,
 input,
 select,
@@ -172,9 +179,9 @@ select {
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   cursor: pointer;
 }
 
@@ -183,16 +190,16 @@ button,
 }
 
 button,
-html [type=button],
-[type=reset],
-[type=submit] {
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  outline: 0;
+	outline: 0;
   padding: 0;
 }
 
@@ -220,24 +227,22 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
 }
 
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-/*# sourceMappingURL=normalize.css.map */

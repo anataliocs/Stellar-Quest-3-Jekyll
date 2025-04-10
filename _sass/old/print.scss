@@ -1,6 +1,14 @@
+// _sass/print.scss
+@import 'variables';
+
+body {
+  background-color: $white;
+}
+
 @media print {
   body {
     background-image: none !important;
+    background-color: $white;
   }
   .wrapper {
     box-shadow: none;
@@ -12,7 +20,10 @@
     box-shadow: none;
   }
   .feature {
-    padding: 0;
+      padding: 0;
+  }
+  .social-btn, .btn {
+    border-color: $color_mischka;
   }
   .post-title .btn,
   #dl-menu,
@@ -20,5 +31,3 @@
     display: none;
   }
 }
-
-/*# sourceMappingURL=print.css.map */
