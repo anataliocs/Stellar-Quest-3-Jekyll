@@ -1,5 +1,6 @@
 // _sass/mixins.scss
-@import 'variables';
+@use "sass:math";
+@use 'variables';
 
 // UTILITY MIXINS
 // --------------------------------------------------
@@ -63,31 +64,31 @@
 // ------------------------
 @mixin font-size($size) {
   font-size: 0rem + $size;
-  font-size: 0rem + calc($size / $doc-font-size);
-  line-height: 0 + calc(round($doc-line-height / $size * 10000) / 10000);
-  margin-bottom: 0px + $doc-line-height;
-  margin-bottom: 0rem + calc($doc-line-height / $doc-font-size);
+  font-size: 0rem + calc($size / variables.$doc-font-size);
+  line-height: 0 + calc(math.round(variables.$doc-line-height / $size * 10000) / 10000);
+  margin-bottom: 0px + variables.$doc-line-height;
+  margin-bottom: 0rem + calc(variables.$doc-line-height / variables.$doc-font-size);
 }
 
 // Just the REMs
 // -------------
 @mixin font-rem($size) {
   font-size: 0px + $size;
-  font-size: 0rem + calc($size / $doc-font-size);
+  font-size: 0rem + calc($size / variables.$doc-font-size);
 }
 
 // Just font-size and line-height
 // ------------------------------
 @mixin font($size) {
   font-size: 0px + $size;
-  font-size: 0rem + calc($size / $doc-font-size);
-  line-height: 0 + calc(round($doc-line-height / $size * 10000) / 10000);
+  font-size: 0rem + calc($size / variables.$doc-font-size);
+  line-height: 0 + calc(math.round(variables.$doc-line-height / $size * 10000) / 10000);
 }
 
 // GRADIENTS
 // --------------------------------------------------
 
-@mixin horizontal($startColor : $color_gallery, $midColor :  $color_stack, $endColor : $color_gallery) {
+@mixin horizontal($startColor : variables.$color_gallery, $midColor :  variables.$color_stack, $endColor : variables.$color_gallery) {
   background-color: $endColor;
   background-image  : -webkit-linear-gradient(left, $startColor, $midColor, $endColor); 			 // Safari 5.1+, Chrome 10+
   background-image  : -moz-linear-gradient(left, $startColor, $midColor, $endColor); 					 // FF 3.6+

@@ -1,15 +1,15 @@
 {
     "name": "Stellar Quest 3 Jekyll Development Container",
     "image": "mcr.microsoft.com/vscode/devcontainers/ruby:0-3",
-    "features": {},
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
     "postCreateCommand": "bundle install",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
-        "rebornix.Ruby",
         "castwide.solargraph",
-        "wingrunr21.vscode-ruby",
         "hridoy.rails-snippets"
     ]
 }

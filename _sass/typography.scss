@@ -1,14 +1,14 @@
 
 // _sass/typography.scss
-@import 'mixins';
+@use 'mixins';
 
 h1 {
-  @include font-size(2rem);
+  @include mixins.font-size(2rem);
 }
 
 // content area
 .content {
-	@include font-size(14);
+	@include mixins.font-size(14);
 	padding: 0 2rem;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
@@ -59,7 +59,7 @@ h3.title a {
 		background: $white;
 		color: $color_shark;
 		a {
-			@include font-rem(20);
+			@include mixins.font-rem(20);
 			text-decoration: none;
 			color: $color_shark;
 			font-weight: bolder;
@@ -69,7 +69,7 @@ h3.title a {
 		}
 		p {
 			font-weight: lighter;
-			@include font-rem(16);
+			@include mixins.font-rem(16);
 		}
 	}
 }
@@ -91,7 +91,7 @@ blockquote {
 // figcaption
 figcaption {
     padding-top: 10px;
-    @include font(14);
+    @include mixins.font(14);
     color: $color_stack;
 }
 
@@ -123,10 +123,10 @@ p code,
 li code,
 p pre,
 li pre {
-    @include font(14);
+    @include mixins.font(14);
     background-color: $color_gray;
     border: 1px solid $color_mischka;
-    @include rounded(4px);
+    @include mixins.rounded(4px);
     margin: 0 2px;
     padding: 0 5px;
 }
@@ -146,10 +146,10 @@ table {
     margin-top: 1.5em;
     padding: .5em 1em;
     text-indent: 0;
-    @include font-rem(14);
+    @include mixins.font-rem(14);
     background-color: $color_gray;
     border: 1px solid $color_pink_swan;
-    @include rounded(3px);
+    @include mixins.rounded(3px);
 }
 
 // description title
