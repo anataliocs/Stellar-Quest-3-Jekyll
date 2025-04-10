@@ -43,7 +43,7 @@ remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- CSS -->
-<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/index.css">
 <!-- JS -->
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr-3.3.1.custom.min.js"></script>
 <!-- Favicons -->
@@ -60,36 +60,10 @@ remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link href="{{ site.url }}{{ site.baseurl }}/assets/css/duotone-thin.css" rel="stylesheet" />
 <link href="{{ site.url }}{{ site.baseurl }}/assets/css/sharp-duotone-thin.css" rel="stylesheet" />
 
-<!-- Background Image -->
-{% if site.background %}
-{% capture background %}{{ site.background }}{% endcapture %}
-{% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}{{ site.baseurl }}/{{
-background }}{% endcapture %}{% endunless %}
 <style type="text/css">
     body {
-        background-image:url({{ background }});
-
-            {
-            % unless site.tiled_bg %
-        }
 
         background-repeat: no-repeat;
         background-size: cover;
-
-            {
-            % endunless %
-        }
     }
 </style>
-{% endif %}
-<!-- Post Feature Image -->
-{% if page.feature %}
-{% capture feature %}{{ page.feature }}{% endcapture %}
-{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}{{ site.baseurl }}/{{ feature
-}}{% endcapture %}{% endunless %}
-<style type="text/css">
-    .feature {
-        background-image:url({{ feature }});
-    }
-</style>
-{% endif %}

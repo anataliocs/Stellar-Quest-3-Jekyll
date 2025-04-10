@@ -13,7 +13,7 @@ bundle install && bundle exec jekyll serve
 
 Compile Sass
 ```
-sass _sass/ :assets/css/main.css
+sass _sass/:css/index.css
 ```
 
 ## Installation
