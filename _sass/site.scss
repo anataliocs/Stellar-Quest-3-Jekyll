@@ -72,7 +72,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    background: linear-gradient(to right,rgb(128, 110, 142),white);	
+    background: linear-gradient(to right,rgb(187, 165, 203),white);	
 	background-color: white;
     
     z-index: 1;
@@ -80,10 +80,10 @@ body {
     align-items: center;
     justify-content: center;
 
-    border-radius: 3px !important;
+    border-radius: 1px !important;
     border-color: rgba(#e5e6e9, 0.5) rgba(#dfe0e4, 0.5)
     #d0d1d5 !important;
-    border: 1px solid;
+    border: 1px outset;
 }
 .row {
     justify-content: center;
