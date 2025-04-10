@@ -24,6 +24,7 @@ mathjax: false
 sass:
   sass_dir: _sass
   style: expanded
+  load_paths: [_sass/vendor, _sass/old]
   
 
 # Comments

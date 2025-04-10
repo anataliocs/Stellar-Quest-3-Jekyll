@@ -67,8 +67,14 @@ body {
     max-width: 550px;
     padding-right: 15px;
     padding-left: 15px;
-    // background: linear-gradient(to right,rgb(128, 110, 142),white);	
-		
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: linear-gradient(to right,rgb(128, 110, 142),white);	
+	background-color: white;
+    
     z-index: 1;
     display: flex;
     align-items: center;

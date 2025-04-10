@@ -2,16 +2,6 @@
 sitemap: false
 ---
 
-@import "old/variables";
-@import "old/mixins";
-@import "old/normalize";
-@import "old/site";
-@import "old/typography";
-@import "old/elements";
-@import "old/syntax";
-@import "old/nav";
-
-
 @import "brands";
 @import "variables";
 @import "mixins";
@@ -33,11 +23,6 @@ sitemap: false
 @import "syntax";
 @import "typography";
 @import "v4-shims";
-
-@import "vendor/fonts";
-@import "vendor/font-awesome";
-@import "vendor/animate";
-@import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
 
