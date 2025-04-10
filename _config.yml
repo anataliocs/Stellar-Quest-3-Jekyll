@@ -23,7 +23,7 @@ kramdown:
 mathjax: false
 sass:
   sass_dir: _sass
-  style: compressed
+  style: expanded
   
 
 # Comments
