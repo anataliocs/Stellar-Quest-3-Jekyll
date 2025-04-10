@@ -57,6 +57,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
+      - name: Build Provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: './_site'
+          show-summary: 'true'
 
   # Deployment job
   deploy:
