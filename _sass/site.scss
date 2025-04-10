@@ -85,36 +85,21 @@ body {
         margin-top: 20px;
         margin-bottom: 25px;
     }
-    @media #{variables.$small} {
-        padding: 0 1em;
-    }
-}
 .wrapper {
     width: 75%;
     max-width: 850px;
     margin: 4rem auto;
-    background: variables.$white;
-    color: variables.$color_tuatara;
+    
+    
     padding: 2em;
     border-radius: 3px;
-    box-shadow: 0 0 10px 0 rgba(variables.$color_shark, 0.3);
-    @include mixins.transition(0.5s);
-    @media #{variables.$small} {
-        width: 90%;
-        padding: 2em 0;
-        box-shadow: none;
-    }
 }
 
 // entry meta
 .entry-meta {
-    @include mixins.font-rem(12);
+    
     text-transform: uppercase;
-    color: color.adjust(variables.$color_tuatara, $lightness: 60);
     padding-left: 0;
-    a {
-        color: color.adjust(variables.$color_tuatara, $lightness: 60);
-    }
     li {
         list-style-type: none;
         display: inline;
@@ -126,28 +111,17 @@ body {
         
         text-decoration: none;
         
-        color: variables.$color_tuatara;
-        @include mixins.transition(0.75s);
+        
+        
         margin: 2px 5px;
         span {
             float: left;
             padding: 2px 6px;
         }
-        .count {
-            background-color: color.adjust(variables.$white, $lightness: -15);
-            @include mixins.border-radius(3px, 3px, 0, 0);
-        }
-        &:hover {
-            background-color: color.adjust(variables.$white, $lightness: -15);
-            box-shadow: 0 0 1px 0 rgba(variables.$color_shark, 0.5);
-        }
     }
 }
 header .entry-meta {
     display: none; // hide header meta on small screens
-    @media #{variables.$notsmall} {
-        display: block;
-    }
 }
 .entry-title a {
     text-decoration: none;
@@ -166,31 +140,6 @@ header .entry-meta {
     float: right;
     text-align: right;
 }
-.feature {
-    @include mixins.transition(0.5s);
-    @media #{variables.$small} {
-        background-image: none !important;
-    }
-    @media #{variables.$medium} {
-        color: white;
-        padding: 4em;
-        margin-left: -4rem;
-        margin-right: -4rem;
-        margin-top: -2rem;
-        border-radius: 3px 3px 0 0;
-        background-color: rgba(variables.$black, 0.6);
-        background-blend-mode: multiply;
-        background-position: center center;
-    }
-    @media #{variables.$notsmall} {
-        color: white;
-        padding: 10em;
-        margin-left: -4rem;
-        margin-right: -4rem;
-        margin-top: -2rem;
-        border-radius: 3px 3px 0 0;
-        background-color: rgba(variables.$black, 0.6);
-        background-blend-mode: multiply;
-        background-position: center center;
-    }
+
+
 }

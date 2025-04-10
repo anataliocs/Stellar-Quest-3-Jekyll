@@ -1,17 +1,119 @@
-/* Error: Undefined mixin.
- *     ,
- * 173 |     
- *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *     '
- *   _sass/elements.scss 173:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a     \2577 \a 173 \2502      \a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   _sass/elements.scss 173:5  root stylesheet";
+.btn, .social-btn {
+  display: inline-block;
+  border: 1px solid;
+  text-decoration: none;
 }
+
+.social-btn {
+  padding: 6.46px;
+  margin: 6.46px;
+  border-radius: 100%;
+  border: 0.1px solid rgba(0, 0, 0, 0.208);
+  opacity: 0.88;
+}
+
+.btn {
+  padding: 10px 18px;
+  margin: 4px auto;
+}
+.btn .title .btn {
+  margin: 10px;
+  font-weight: 300;
+}
+.btn hr {
+  border: 0;
+  height: 1px;
+  opacity: 0.8;
+  margin: 1em 0;
+  background-image: -webkit-linear-gradient(left);
+  background-image: -moz-linear-gradient(left);
+  background-image: -ms-linear-gradient(left);
+  background-image: -o-linear-gradient(left);
+}
+.btn hr.hr-line {
+  border: 0;
+  height: 1px;
+  opacity: 0.15;
+  margin: 1em 0;
+  background-image: -webkit-linear-gradient(left);
+  background-image: -moz-linear-gradient(left);
+  background-image: -ms-linear-gradient(left);
+  background-image: -o-linear-gradient(left);
+}
+.btn img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  image-rendering: optimizeQuality;
+}
+.btn .img-circle {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.btn .img-circle-sm {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+.btn .author-photo {
+  background-color: transparent;
+  width: 55%;
+  margin-top: 9.5px;
+}
+.btn .image-right {
+  float: right;
+  margin-left: 1em;
+  margin-top: 0;
+}
+.btn figure {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.btn figure img {
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 62.5em) {
+  .btn figure.half img {
+    width: calc(50% - 4px);
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .btn figure.half figcaption {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 62.5em) {
+  .btn figure.third img {
+    width: calc(33.3% - 6px);
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .btn figure.third figcaption {
+    clear: left;
+  }
+}
+.btn svg:not(:root) {
+  overflow: hidden;
+}
+.btn kbd {
+  display: inline-block;
+  margin: 0 1px;
+  padding: 1px 8px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+.btn .goup-container {
+  border-radius: 3px !important;
+}
+
+/*# sourceMappingURL=elements.css.map */

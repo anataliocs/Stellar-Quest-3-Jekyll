@@ -172,23 +172,17 @@ kbd {
     padding: 1px 8px;
     
     font-weight: bold;
-    color: variables.$color_fuscous_gray;
+    
     vertical-align: middle;
-    background-color: variables.$color_alabaster;
-    border: solid 1px variables.$color_celeste;
-    border-bottom-color: variables.$color_pink_swan;
+    
+    
     border-radius: 3px;
-    box-shadow: inset 0 -1px 0 variables.$color_pink_swan;
+    
 }
 
 // go up button
 .goup-container {
     border-radius: 3px !important;
-    
-    border: 1px solid;
-    @media #{variables.$small} {
-        display: none !important;
-    }
 }
 
 }

@@ -102,9 +102,7 @@ p code,
 li code,
 p pre,
 li pre {
-    @include mixins.font(14);
-    background-color: $color_gray;
-    border: 1px solid $color_mischka;
+    
     
     margin: 0 2px;
     padding: 0 5px;
@@ -126,8 +124,8 @@ table {
     padding: .5em 1em;
     text-indent: 0;
     
-    background-color: $color_gray;
-    border: 1px solid $color_pink_swan;
+    
+    
     
 }
 
